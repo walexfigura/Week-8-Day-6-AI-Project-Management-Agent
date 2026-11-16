@@ -1,0 +1,23 @@
+{
+  "_comment": "Each edge means: task_id cannot finish until depends_on is Done (finish-to-start).",
+  "dependencies": [
+    {"task_id": "TASK-002", "depends_on": "TASK-001"},
+    {"task_id": "TASK-003", "depends_on": "TASK-002"},
+    {"task_id": "TASK-004", "depends_on": "TASK-002"},
+    {"task_id": "TASK-005", "depends_on": "TASK-003"},
+    {"task_id": "TASK-005", "depends_on": "TASK-004"},
+    {"task_id": "TASK-006", "depends_on": "TASK-001"},
+    {"task_id": "TASK-007", "depends_on": "TASK-002"},
+    {"task_id": "TASK-008", "depends_on": "TASK-007"},
+    {"task_id": "TASK-009", "depends_on": "TASK-001"},
+    {"task_id": "TASK-011", "depends_on": "TASK-004"},
+    {"task_id": "TASK-011", "depends_on": "TASK-005"},
+    {"task_id": "TASK-013", "depends_on": "TASK-006"},
+    {"task_id": "TASK-013", "depends_on": "TASK-008"},
+    {"task_id": "TASK-013", "depends_on": "TASK-010"},
+    {"task_id": "TASK-013", "depends_on": "TASK-011"},
+    {"task_id": "TASK-013", "depends_on": "TASK-012"},
+    {"task_id": "TASK-014", "depends_on": "TASK-013"},
+    {"task_id": "TASK-015", "depends_on": "TASK-014"}
+  ]
+}

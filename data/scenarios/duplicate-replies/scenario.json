@@ -1,0 +1,19 @@
+{
+  "name": "duplicate-replies",
+  "description": "Slack delivers Sarah's reply event twice (a normal retry). The second delivery must not create a second proposal, commitment or approval request.",
+  "clock": "2026-03-10T09:30:00-04:00",
+  "overlays": {
+    "seed_followups": [
+      {"task_id": "TASK-002", "recipient_id": "TM-SARAH", "channel": "slack", "sent_at": "2026-03-10T09:05:00-04:00",
+       "text": "Hey Sarah! Checking in on the product photos. The landing page and ad creatives are waiting on them. Are we still expecting them today, or has the timeline changed?"}
+    ]
+  },
+  "replies": {
+    "photography_delayed_twice": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0901", "minutes_after_send": 20,
+      "deliveries": 2,
+      "text": "The photographer had to reschedule. We'll have the final images on Wednesday.",
+      "expected": {"related_task_id": "TASK-002", "message_intent": "timeline_update", "new_estimated_completion": "2026-03-11", "completion_confirmed": false}
+    }
+  }
+}

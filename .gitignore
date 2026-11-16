@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+
+# Local agent state (recreate with `python run.py init`)
+state/*
+!state/.gitkeep
+
+# Generated reports
+reports/*
+!reports/.gitkeep
+
+.DS_Store

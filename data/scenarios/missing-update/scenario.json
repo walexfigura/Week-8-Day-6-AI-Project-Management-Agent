@@ -1,0 +1,13 @@
+{
+  "name": "missing-update",
+  "description": "Emma's organic social posts task (TASK-009) has had no update for 8 days and an external email to Brightlane is unanswered. The agent should notice the stale status and ask Emma - not Brightlane - for an update.",
+  "clock": "2026-03-10T09:30:00-04:00",
+  "overlays": {},
+  "replies": {
+    "social_update": {
+      "from_member_id": "TM-EMMA", "channel": "slack", "expects_followup_for": "TASK-009", "event_id": "EVT-EMMA-0101", "minutes_after_send": 40,
+      "text": "Brightlane finally came back to me. I'll have the social calendar finished Monday.",
+      "expected": {"message_intent": "timeline_update", "new_estimated_completion": "2026-03-16", "completion_confirmed": false}
+    }
+  }
+}

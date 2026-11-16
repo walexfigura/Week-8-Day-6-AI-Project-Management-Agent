@@ -1,0 +1,18 @@
+{
+  "name": "completed-task",
+  "description": "Emma says the launch email is 'done, just needs review'. That does not meet the Done definition; the agent must not mark it Done.",
+  "clock": "2026-03-12T10:00:00-04:00",
+  "overlays": {
+    "seed_followups": [
+      {"task_id": "TASK-006", "recipient_id": "TM-EMMA", "channel": "slack", "sent_at": "2026-03-12T09:15:00-04:00",
+       "text": "Hey Emma! How's the launch email coming along? It's due tomorrow."}
+    ]
+  },
+  "replies": {
+    "email_done_review": {
+      "from_member_id": "TM-EMMA", "channel": "slack", "expects_followup_for": "TASK-006", "event_id": "EVT-EMMA-0301", "minutes_after_send": 20,
+      "text": "Done, just needs review.",
+      "expected": {"message_intent": "completion_claim", "completion_confirmed": false}
+    }
+  }
+}

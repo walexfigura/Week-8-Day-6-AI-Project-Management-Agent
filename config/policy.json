@@ -1,0 +1,35 @@
+{
+  "_comment": "Machine-readable follow-up and approval policy. knowledge-base/followup-rules.md and approval-policies.md explain each value in plain English. Edit and re-run - no code changes needed.",
+  "timezone": "America/New_York",
+  "working_hours": {"start": "09:00", "end": "17:30"},
+  "working_days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+  "holidays": ["2026-04-03"],
+  "followups": {
+    "min_working_hours_between_followups": 8,
+    "reply_wait_working_hours": 8,
+    "max_attempts_before_escalation": 2,
+    "max_followups_per_person_per_day": 2,
+    "fresh_update_hours": 48,
+    "stale_update_days": 5,
+    "approaching_due_workdays": 2
+  },
+  "channels": {
+    "internal_default": "slack",
+    "external_default": "email",
+    "formal_topics": ["vendor", "contract", "budget", "external"]
+  },
+  "escalation": {
+    "project_lead_member_id": "TM-ALEX",
+    "milestone_slack_warning_workdays": 2
+  },
+  "messages": {
+    "max_length_chars": 600,
+    "banned_phrases": [
+      "dear valued team member",
+      "i hope this message finds you well",
+      "per my last message",
+      "as an ai"
+    ]
+  },
+  "exemptions": []
+}

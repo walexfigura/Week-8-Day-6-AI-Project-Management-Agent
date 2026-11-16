@@ -1,0 +1,21 @@
+{
+  "_comment": "Monday.com item updates (the comment feed on each task). Timestamps are ISO 8601 with offset.",
+  "updates": [
+    {"update_id": "UPD-1001", "task_id": "TASK-001", "author_id": "TM-ALEX", "created_at": "2026-03-02T16:05:00-05:00",
+     "body": "Spec sheet final: 32oz, four colorways (Glacier, Pine, Ember, Slate), leakproof chug lid. Marking Done."},
+    {"update_id": "UPD-1002", "task_id": "TASK-002", "author_id": "TM-SARAH", "created_at": "2026-03-04T11:20:00-05:00",
+     "body": "Shoot booked with Lumen Studio for Monday 3/9. Edits same day, finals by end of day Monday."},
+    {"update_id": "UPD-1003", "task_id": "TASK-004", "author_id": "TM-JAMES", "created_at": "2026-03-06T15:45:00-05:00",
+     "body": "Layout and copy are in staging with placeholder images. Setting to Blocked until final product photos arrive."},
+    {"update_id": "UPD-1004", "task_id": "TASK-007", "author_id": "TM-KEVIN", "created_at": "2026-03-06T10:10:00-05:00",
+     "body": "Ad copy variants and templates ready. Waiting on product photos for the final creatives."},
+    {"update_id": "UPD-1005", "task_id": "TASK-006", "author_id": "TM-EMMA", "created_at": "2026-03-09T14:30:00-04:00",
+     "body": "First draft of launch email is written; hero image slot will use the new product photo. Final copy review Thursday."},
+    {"update_id": "UPD-1006", "task_id": "TASK-009", "author_id": "TM-EMMA", "created_at": "2026-03-02T10:00:00-05:00",
+     "body": "Started the social calendar. Waiting to hear back from Brightlane on creator posts."},
+    {"update_id": "UPD-1007", "task_id": "TASK-010", "author_id": "TM-ALEX", "created_at": "2026-03-09T16:40:00-04:00",
+     "body": "Warehouse confirmed 2,400 units received. Cycle count finishes Thursday 3/12; Crestline asked a carton-label question, answering today."},
+    {"update_id": "UPD-1008", "task_id": "TASK-012", "author_id": "TM-JAMES", "created_at": "2026-03-09T12:15:00-04:00",
+     "body": "Pixelwork QA has the checkout test plan. Testing scheduled for 3/18-3/19."}
+  ]
+}

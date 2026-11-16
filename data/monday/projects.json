@@ -1,0 +1,25 @@
+{
+  "_comment": "Simulated Monday.com board export (normalized). The simulated clock lives in data/scenarios/<name>/scenario.json.",
+  "projects": [
+    {
+      "project_id": "PRJ-TRAILMATE",
+      "board_id": "BRD-4471",
+      "name": "TrailMate 32oz Insulated Bottle Launch",
+      "owner_id": "TM-ALEX",
+      "description": "Launch of the new TrailMate 32oz insulated water bottle on the Northstar Supply store, paid ads, email and social.",
+      "launch_date": "2026-03-24",
+      "groups": [
+        {"group_id": "GRP-PRODUCT", "name": "Product & Operations"},
+        {"group_id": "GRP-CREATIVE", "name": "Creative"},
+        {"group_id": "GRP-WEB", "name": "Website"},
+        {"group_id": "GRP-ADS", "name": "Advertising"},
+        {"group_id": "GRP-MKTG", "name": "Marketing"},
+        {"group_id": "GRP-LAUNCH", "name": "Launch"}
+      ],
+      "milestones": [
+        {"milestone_id": "MS-LAUNCH-APPROVAL", "name": "Launch campaign approved", "task_id": "TASK-013", "due_date": "2026-03-20"},
+        {"milestone_id": "MS-LAUNCH", "name": "Product launch", "task_id": "TASK-014", "due_date": "2026-03-24", "primary": true}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "_note": "Fictional Northstar Supply data for the AI Project Manager Skill. Treat as_of as 'now'.",
+  "as_of": "2026-03-10T09:30:00-04:00",
+  "working_days": "Mon-Fri, 09:00-17:30 America/New_York; holiday 2026-04-03",
+  "project": {
+    "project_id": "PRJ-TRAILMATE",
+    "board_id": "BRD-4471",
+    "name": "TrailMate 32oz Insulated Bottle Launch",
+    "owner_id": "TM-ALEX",
+    "description": "Launch of the new TrailMate 32oz insulated water bottle on the Northstar Supply store, paid ads, email and social.",
+    "launch_date": "2026-03-24",
+    "groups": [
+      {
+        "group_id": "GRP-PRODUCT",
+        "name": "Product & Operations"
+      },
+      {
+        "group_id": "GRP-CREATIVE",
+        "name": "Creative"
+      },
+      {
+        "group_id": "GRP-WEB",
+        "name": "Website"
+      },
+      {
+        "group_id": "GRP-ADS",
+        "name": "Advertising"
+      },
+      {
+        "group_id": "GRP-MKTG",
+        "name": "Marketing"
+      },
+      {
+        "group_id": "GRP-LAUNCH",
+        "name": "Launch"
+      }
+    ],
+    "milestones": [
+      {
+        "milestone_id": "MS-LAUNCH-APPROVAL",
+        "name": "Launch campaign approved",
+        "task_id": "TASK-013",
+        "due_date": "2026-03-20"
+      },
+      {
+        "milestone_id": "MS-LAUNCH",
+        "name": "Product launch",
+        "task_id": "TASK-014",
+        "due_date": "2026-03-24",
+        "primary": true
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "task_id": "TASK-001",
+      "short_name": "the product specs",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-PRODUCT",
+      "name": "Finalize product specifications",
+      "owner_id": "TM-ALEX",
+      "status": "Done",
+      "priority": "High",
+      "due_date": "2026-03-02",
+      "completed_at": "2026-03-02",
+      "estimated_workdays": 0,
+      "description": "Lock capacity, colors, lid options and copy-ready spec sheet.",
+      "partial_progress": null,
+      "depends_on": [],
+      "updates": [
+        {
+          "update_id": "UPD-1001",
+          "author_id": "TM-ALEX",
+          "created_at": "2026-03-02T16:05:00-05:00",
+          "body": "Spec sheet final: 32oz, four colorways (Glacier, Pine, Ember, Slate), leakproof chug lid. Marking Done."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-002",
+      "short_name": "the product photos",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-CREATIVE",
+      "name": "Complete product photography",
+      "owner_id": "TM-SARAH",
+      "status": "In Progress",
+      "priority": "Critical",
+      "due_date": "2026-03-09",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "Studio and lifestyle shots of all four colorways with Lumen Studio; deliver final edited images.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-001"
+      ],
+      "updates": [
+        {
+          "update_id": "UPD-1002",
+          "author_id": "TM-SARAH",
+          "created_at": "2026-03-04T11:20:00-05:00",
+          "body": "Shoot booked with Lumen Studio for Monday 3/9. Edits same day, finals by end of day Monday."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-003",
+      "short_name": "the image approval",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-CREATIVE",
+      "name": "Approve product images",
+      "owner_id": "TM-ALEX",
+      "status": "Not Started",
+      "priority": "High",
+      "due_date": "2026-03-11",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "Project lead signs off on final edited images.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-002"
+      ],
+      "updates": []
+    },
+    {
+      "task_id": "TASK-004",
+      "short_name": "the landing page",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-WEB",
+      "name": "Build website landing page",
+      "owner_id": "TM-JAMES",
+      "status": "Blocked",
+      "priority": "Critical",
+      "due_date": "2026-03-16",
+      "completed_at": null,
+      "estimated_workdays": 3,
+      "description": "Product landing page with gallery, specs and add-to-cart.",
+      "partial_progress": "Layout and copy can be built with placeholder images; final product images are required to finish.",
+      "depends_on": [
+        "TASK-002"
+      ],
+      "updates": [
+        {
+          "update_id": "UPD-1003",
+          "author_id": "TM-JAMES",
+          "created_at": "2026-03-06T15:45:00-05:00",
+          "body": "Layout and copy are in staging with placeholder images. Setting to Blocked until final product photos arrive."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-005",
+      "short_name": "the image upload",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-WEB",
+      "name": "Upload product images to store",
+      "owner_id": "TM-JAMES",
+      "status": "Not Started",
+      "priority": "High",
+      "due_date": "2026-03-17",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "Upload approved images to product variants and the landing page gallery.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-003",
+        "TASK-004"
+      ],
+      "updates": []
+    },
+    {
+      "task_id": "TASK-006",
+      "short_name": "the launch email",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-MKTG",
+      "name": "Write launch email",
+      "owner_id": "TM-EMMA",
+      "status": "In Progress",
+      "priority": "High",
+      "due_date": "2026-03-13",
+      "completed_at": null,
+      "estimated_workdays": 2,
+      "description": "Launch announcement email to the subscriber list.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-001"
+      ],
+      "updates": [
+        {
+          "update_id": "UPD-1005",
+          "author_id": "TM-EMMA",
+          "created_at": "2026-03-09T14:30:00-04:00",
+          "body": "First draft of launch email is written; hero image slot will use the new product photo. Final copy review Thursday."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-007",
+      "short_name": "the ad creatives",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-ADS",
+      "name": "Create advertising creatives",
+      "owner_id": "TM-KEVIN",
+      "status": "Waiting",
+      "priority": "Critical",
+      "due_date": "2026-03-13",
+      "completed_at": null,
+      "estimated_workdays": 3,
+      "description": "Static and short video ad creatives for Meta and Google.",
+      "partial_progress": "Ad copy and templates can be prepared now; final creatives need the product images.",
+      "depends_on": [
+        "TASK-002"
+      ],
+      "updates": [
+        {
+          "update_id": "UPD-1004",
+          "author_id": "TM-KEVIN",
+          "created_at": "2026-03-06T10:10:00-05:00",
+          "body": "Ad copy variants and templates ready. Waiting on product photos for the final creatives."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-008",
+      "short_name": "the ad campaign setup",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-ADS",
+      "name": "Configure advertising campaigns",
+      "owner_id": "TM-KEVIN",
+      "status": "Not Started",
+      "priority": "High",
+      "due_date": "2026-03-18",
+      "completed_at": null,
+      "estimated_workdays": 2,
+      "description": "Build launch campaigns, audiences and budgets (budget already approved).",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-007"
+      ],
+      "updates": []
+    },
+    {
+      "task_id": "TASK-009",
+      "short_name": "the organic social posts",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-MKTG",
+      "name": "Prepare organic social posts",
+      "owner_id": "TM-EMMA",
+      "status": "In Progress",
+      "priority": "Medium",
+      "due_date": "2026-03-17",
+      "completed_at": null,
+      "estimated_workdays": 2,
+      "description": "Launch-week posts using existing lifestyle library and creator content.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-001"
+      ],
+      "updates": [
+        {
+          "update_id": "UPD-1006",
+          "author_id": "TM-EMMA",
+          "created_at": "2026-03-02T10:00:00-05:00",
+          "body": "Started the social calendar. Waiting to hear back from Brightlane on creator posts."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-010",
+      "short_name": "the inventory check",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-PRODUCT",
+      "name": "Review inventory readiness",
+      "owner_id": "TM-ALEX",
+      "status": "In Progress",
+      "priority": "High",
+      "due_date": "2026-03-12",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "Confirm launch inventory received, counted and sellable.",
+      "partial_progress": null,
+      "depends_on": [],
+      "updates": [
+        {
+          "update_id": "UPD-1007",
+          "author_id": "TM-ALEX",
+          "created_at": "2026-03-09T16:40:00-04:00",
+          "body": "Warehouse confirmed 2,400 units received. Cycle count finishes Thursday 3/12; Crestline asked a carton-label question, answering today."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-011",
+      "short_name": "website QA",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-WEB",
+      "name": "Complete website QA",
+      "owner_id": "TM-JAMES",
+      "status": "Not Started",
+      "priority": "High",
+      "due_date": "2026-03-19",
+      "completed_at": null,
+      "estimated_workdays": 2,
+      "description": "Cross-browser and mobile QA of the landing page and product page.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "updates": []
+    },
+    {
+      "task_id": "TASK-012",
+      "short_name": "the checkout testing",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-WEB",
+      "name": "Test checkout",
+      "owner_id": "TM-JAMES",
+      "status": "Not Started",
+      "priority": "High",
+      "due_date": "2026-03-19",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "End-to-end checkout tests with Pixelwork QA (discount codes, taxes, shipping).",
+      "partial_progress": null,
+      "depends_on": [],
+      "updates": [
+        {
+          "update_id": "UPD-1008",
+          "author_id": "TM-JAMES",
+          "created_at": "2026-03-09T12:15:00-04:00",
+          "body": "Pixelwork QA has the checkout test plan. Testing scheduled for 3/18-3/19."
+        }
+      ]
+    },
+    {
+      "task_id": "TASK-013",
+      "short_name": "the launch approval",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-LAUNCH",
+      "name": "Approve launch campaign",
+      "owner_id": "TM-ALEX",
+      "status": "Not Started",
+      "priority": "Critical",
+      "due_date": "2026-03-20",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "Go/no-go review of site, ads, email and inventory.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-006",
+        "TASK-008",
+        "TASK-010",
+        "TASK-011",
+        "TASK-012"
+      ],
+      "updates": []
+    },
+    {
+      "task_id": "TASK-014",
+      "short_name": "the launch",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-LAUNCH",
+      "name": "Launch product",
+      "owner_id": "TM-ALEX",
+      "status": "Not Started",
+      "priority": "Critical",
+      "due_date": "2026-03-24",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "milestone": true,
+      "description": "Publish product, send launch email, activate campaigns.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-013"
+      ],
+      "updates": []
+    },
+    {
+      "task_id": "TASK-015",
+      "short_name": "the post-launch review",
+      "project_id": "PRJ-TRAILMATE",
+      "group_id": "GRP-LAUNCH",
+      "name": "Review post-launch results",
+      "owner_id": "TM-EMMA",
+      "status": "Not Started",
+      "priority": "Medium",
+      "due_date": "2026-03-31",
+      "completed_at": null,
+      "estimated_workdays": 1,
+      "description": "First-week sales, ad and email performance review.",
+      "partial_progress": null,
+      "depends_on": [
+        "TASK-014"
+      ],
+      "updates": []
+    }
+  ]
+}

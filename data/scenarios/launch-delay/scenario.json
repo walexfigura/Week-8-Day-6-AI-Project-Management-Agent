@@ -1,0 +1,54 @@
+{
+  "name": "launch-delay",
+  "description": "Main teaching scenario. Tuesday morning, March 10 2026. Sarah's product photography was due yesterday and is not done; the landing page (James) and ad creatives (Kevin) both depend on it. Launch is Tuesday March 24.",
+  "clock": "2026-03-10T09:30:00-04:00",
+  "overlays": {},
+  "replies": {
+    "photography_delayed": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0001",
+      "minutes_after_send": 25,
+      "text": "The photographer had to reschedule. We'll have the final images on Wednesday.",
+      "expected": {"related_task_id": "TASK-002", "message_intent": "timeline_update", "new_estimated_completion": "2026-03-11", "completion_confirmed": false}
+    },
+    "photography_tomorrow": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0002", "minutes_after_send": 20,
+      "text": "Should be done tomorrow.",
+      "expected": {"message_intent": "timeline_update", "new_estimated_completion": "2026-03-11", "completion_confirmed": false}
+    },
+    "photography_waiting_design": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0003", "minutes_after_send": 20,
+      "text": "Still waiting on design.",
+      "expected": {"message_intent": "blocker_report", "new_estimated_completion": null, "completion_confirmed": false}
+    },
+    "photography_think_good": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0004", "minutes_after_send": 20,
+      "text": "I think we're good.",
+      "expected": {"message_intent": "ambiguous", "completion_confirmed": false}
+    },
+    "photography_push_next_week": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0005", "minutes_after_send": 20,
+      "text": "Can we push it to next week?",
+      "expected": {"message_intent": "deadline_change_request", "new_estimated_completion": null, "completion_confirmed": false}
+    },
+    "photography_sent_yesterday": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0006", "minutes_after_send": 20,
+      "text": "I sent this yesterday.",
+      "expected": {"message_intent": "delivery_claim", "completion_confirmed": false}
+    },
+    "photography_ask_kevin": {
+      "from_member_id": "TM-SARAH", "channel": "slack", "expects_followup_for": "TASK-002", "event_id": "EVT-SARAH-0007", "minutes_after_send": 20,
+      "text": "Ask Kevin, he's handling it now.",
+      "expected": {"message_intent": "ownership_redirect", "completion_confirmed": false}
+    },
+    "landing_page_ack": {
+      "from_member_id": "TM-JAMES", "channel": "slack", "expects_followup_for": "TASK-004", "event_id": "EVT-JAMES-0001", "minutes_after_send": 30,
+      "text": "Thanks for the heads up. If the images land Wednesday I can still finish the landing page by Monday the 16th.",
+      "expected": {"message_intent": "commitment_confirmation", "new_estimated_completion": "2026-03-16", "completion_confirmed": false}
+    },
+    "ad_creatives_slip": {
+      "from_member_id": "TM-KEVIN", "channel": "slack", "expects_followup_for": "TASK-007", "event_id": "EVT-KEVIN-0001", "minutes_after_send": 30,
+      "text": "Wednesday works, but realistically the ad creatives will be ready Monday 3/16, not Friday.",
+      "expected": {"message_intent": "timeline_update", "new_estimated_completion": "2026-03-16", "completion_confirmed": false}
+    }
+  }
+}

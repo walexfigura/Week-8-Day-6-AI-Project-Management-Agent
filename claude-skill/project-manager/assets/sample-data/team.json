@@ -1,0 +1,72 @@
+{
+  "members": [
+    {
+      "member_id": "TM-SARAH",
+      "name": "Sarah Patel",
+      "role": "Creative Lead / Photography",
+      "slack_user_id": "U01SARAH",
+      "on_project": true
+    },
+    {
+      "member_id": "TM-JAMES",
+      "name": "James Okafor",
+      "role": "Web Developer",
+      "slack_user_id": "U02JAMES",
+      "on_project": true
+    },
+    {
+      "member_id": "TM-KEVIN",
+      "name": "Kevin Liu",
+      "role": "Paid Advertising Manager",
+      "slack_user_id": "U03KEVIN",
+      "on_project": true
+    },
+    {
+      "member_id": "TM-EMMA",
+      "name": "Emma Rossi",
+      "role": "Marketing Manager",
+      "slack_user_id": "U04EMMA",
+      "on_project": true
+    },
+    {
+      "member_id": "TM-ALEX",
+      "name": "Alex Rivera",
+      "role": "Project Lead",
+      "slack_user_id": "U05ALEX",
+      "on_project": true
+    },
+    {
+      "member_id": "TM-SARAH-K",
+      "name": "Sarah Kim",
+      "role": "Finance Analyst",
+      "slack_user_id": "U06SKIM",
+      "on_project": false
+    }
+  ],
+  "external_contacts": [
+    {
+      "contact_id": "EXT-LUMEN",
+      "name": "Dana Brooks",
+      "organization": "Lumen Studio (photographer)",
+      "approved_contact": true
+    },
+    {
+      "contact_id": "EXT-CRESTLINE",
+      "name": "Marco Silva",
+      "organization": "Crestline Packaging (vendor)",
+      "approved_contact": true
+    },
+    {
+      "contact_id": "EXT-PIXELWORK",
+      "name": "Priya Nair",
+      "organization": "Pixelwork QA (contractor)",
+      "approved_contact": true
+    },
+    {
+      "contact_id": "EXT-BRIGHTLANE",
+      "name": "Tom Weller",
+      "organization": "Brightlane Creators (influencer agency)",
+      "approved_contact": true
+    }
+  ]
+}

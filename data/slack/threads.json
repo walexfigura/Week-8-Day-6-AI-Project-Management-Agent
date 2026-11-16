@@ -1,0 +1,6 @@
+{
+  "threads": [
+    {"thread_id": "M-2002", "channel_id": "C0LAUNCH", "parent_message_id": "M-2002", "related_task_ids": ["TASK-004", "TASK-002"],
+     "summary_hint": "James asking Sarah when final photos arrive"}
+  ]
+}

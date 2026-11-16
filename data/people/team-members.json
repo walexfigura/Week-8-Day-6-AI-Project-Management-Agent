@@ -1,0 +1,34 @@
+{
+  "_comment": "Fictional people only. All addresses use reserved .example domains. Never replace these with real contact details.",
+  "members": [
+    {"member_id": "TM-SARAH", "name": "Sarah Patel", "first_name": "Sarah", "role": "Creative Lead / Photography", "team": "Creative",
+     "slack_user_id": "U01SARAH", "email": "sarah.patel@northstar.example", "preferred_channel": "slack",
+     "on_project": true, "verified": true, "internal": true, "working_hours": "09:00-17:30 ET"},
+    {"member_id": "TM-JAMES", "name": "James Okafor", "first_name": "James", "role": "Web Developer", "team": "Website",
+     "slack_user_id": "U02JAMES", "email": "james.okafor@northstar.example", "preferred_channel": "slack",
+     "on_project": true, "verified": true, "internal": true, "working_hours": "09:00-17:30 ET"},
+    {"member_id": "TM-KEVIN", "name": "Kevin Liu", "first_name": "Kevin", "role": "Paid Advertising Manager", "team": "Advertising",
+     "slack_user_id": "U03KEVIN", "email": "kevin.liu@northstar.example", "preferred_channel": "slack",
+     "on_project": true, "verified": true, "internal": true, "working_hours": "09:00-17:30 ET"},
+    {"member_id": "TM-EMMA", "name": "Emma Rossi", "first_name": "Emma", "role": "Marketing Manager", "team": "Marketing",
+     "slack_user_id": "U04EMMA", "email": "emma.rossi@northstar.example", "preferred_channel": "slack",
+     "on_project": true, "verified": true, "internal": true, "working_hours": "09:00-17:30 ET"},
+    {"member_id": "TM-ALEX", "name": "Alex Rivera", "first_name": "Alex", "role": "Project Lead", "team": "Operations",
+     "slack_user_id": "U05ALEX", "email": "alex.rivera@northstar.example", "preferred_channel": "slack",
+     "on_project": true, "verified": true, "internal": true, "working_hours": "09:00-17:30 ET"},
+    {"member_id": "TM-SARAH-K", "name": "Sarah Kim", "first_name": "Sarah", "role": "Finance Analyst", "team": "Finance",
+     "slack_user_id": "U06SKIM", "email": "sarah.kim@northstar.example", "preferred_channel": "email",
+     "on_project": false, "verified": true, "internal": true, "working_hours": "09:00-17:30 ET",
+     "_note": "Not on the launch project. Exists so name-only matching on 'Sarah' is ambiguous."}
+  ],
+  "external_contacts": [
+    {"contact_id": "EXT-LUMEN", "name": "Dana Brooks", "organization": "Lumen Studio (photographer)", "email": "dana@lumenstudio.example",
+     "approved_contact": true, "relationship_owner": "TM-SARAH"},
+    {"contact_id": "EXT-CRESTLINE", "name": "Marco Silva", "organization": "Crestline Packaging (vendor)", "email": "orders@crestline.example",
+     "approved_contact": true, "relationship_owner": "TM-ALEX"},
+    {"contact_id": "EXT-PIXELWORK", "name": "Priya Nair", "organization": "Pixelwork QA (contractor)", "email": "priya@pixelworkqa.example",
+     "approved_contact": true, "relationship_owner": "TM-JAMES"},
+    {"contact_id": "EXT-BRIGHTLANE", "name": "Tom Weller", "organization": "Brightlane Creators (influencer agency)", "email": "tom@brightlane.example",
+     "approved_contact": true, "relationship_owner": "TM-EMMA"}
+  ]
+}

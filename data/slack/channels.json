@@ -1,0 +1,16 @@
+{
+  "_comment": "Simulated Slack workspace. D-* channels are the PM bot's direct-message channels with each person.",
+  "bot_user_id": "U00PMBOT",
+  "channels": [
+    {"channel_id": "C0LAUNCH", "name": "trailmate-launch", "type": "public", "purpose": "Coordination for the TrailMate launch", "members": ["U01SARAH", "U02JAMES", "U03KEVIN", "U04EMMA", "U05ALEX", "U00PMBOT", "U99GUEST"]},
+    {"channel_id": "C0CREATIVE", "name": "creative", "type": "public", "purpose": "Creative team", "members": ["U01SARAH", "U05ALEX", "U00PMBOT"]},
+    {"channel_id": "D0SARAH", "name": "dm-sarah", "type": "im", "members": ["U01SARAH", "U00PMBOT"]},
+    {"channel_id": "D0JAMES", "name": "dm-james", "type": "im", "members": ["U02JAMES", "U00PMBOT"]},
+    {"channel_id": "D0KEVIN", "name": "dm-kevin", "type": "im", "members": ["U03KEVIN", "U00PMBOT"]},
+    {"channel_id": "D0EMMA", "name": "dm-emma", "type": "im", "members": ["U04EMMA", "U00PMBOT"]},
+    {"channel_id": "D0ALEX", "name": "dm-alex", "type": "im", "members": ["U05ALEX", "U00PMBOT"]}
+  ],
+  "external_users": [
+    {"slack_user_id": "U99GUEST", "name": "Brightlane guest (Slack Connect)", "verified": false}
+  ]
+}

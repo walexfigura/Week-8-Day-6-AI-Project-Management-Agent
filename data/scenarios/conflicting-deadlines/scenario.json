@@ -1,0 +1,22 @@
+{
+  "name": "conflicting-deadlines",
+  "description": "James posted in Slack that the landing page needs until the 18th, but Monday.com still says the 16th. The agent must flag the conflict, not silently pick one, and propose (not apply) a board change.",
+  "clock": "2026-03-10T09:30:00-04:00",
+  "overlays": {
+    "extra_slack_messages": [
+      {"message_id": "M-2101", "channel_id": "C0LAUNCH", "thread_id": null, "author_slack_id": "U02JAMES", "ts": "2026-03-10T08:40:00-04:00",
+       "text": "FYI even once the photos land, the landing page realistically needs three full days. I'm planning on the 18th for it.", "task_refs": ["TASK-004"]}
+    ],
+    "seed_followups": [
+      {"task_id": "TASK-004", "recipient_id": "TM-JAMES", "channel": "slack", "sent_at": "2026-03-10T09:00:00-04:00",
+       "text": "Hey James! Saw your note about the landing page needing until the 18th. The board still says the 16th - which date should we plan around?"}
+    ]
+  },
+  "replies": {
+    "landing_page_conflict": {
+      "from_member_id": "TM-JAMES", "channel": "slack", "expects_followup_for": "TASK-004", "event_id": "EVT-JAMES-0201", "minutes_after_send": 15,
+      "text": "Board says the 16th but I'm planning on Wednesday the 18th for the landing page.",
+      "expected": {"message_intent": "timeline_update", "new_estimated_completion": "2026-03-18", "completion_confirmed": false}
+    }
+  }
+}
